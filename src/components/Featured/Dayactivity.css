@@ -1,0 +1,166 @@
+
+
+.daygrid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, transparent, rgba(38, 37, 37, 0.3));
+  }
+  
+  .from-transparent {
+    background-color: transparent;
+  }
+  
+  /* Small screen styles */
+  @media (max-width: 640px) {
+    .daygrid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .max-w-[200px] {
+      max-width: 200px;
+    }
+    .text-lg {
+      font-size: 14px;
+    }
+    .text-base {
+      font-size: 12px;
+    }
+    .text-sm {
+      font-size: 10px;
+    }
+  }
+  
+  /* Medium screen styles */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .daygrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .max-w-[300px] {
+      max-width: 250px;
+    }
+    .text-lg {
+      font-size: 16px;
+    }
+    .text-base {
+      font-size: 14px;
+    }
+    .text-sm {
+      font-size: 12px;
+    }
+  }
+  
+  /* Large screen styles */
+  @media (min-width: 1025px) {
+    .daygrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .max-w-[300px] {
+      max-width: 300px;
+    }
+    .text-lg {
+      font-size: 18px;
+    }
+    .text-base {
+      font-size: 16px;
+    }
+    .text-sm {
+      font-size: 14px;
+    }
+  }
+  
+  /* Image styles */
+  
+  .h-full {
+    height: 100%;
+    padding: 4%;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+  
+  /* Text styles */
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .pb-5 {
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Button styles */
+  
+  .bg-blue-500 {
+    background-color: #3498db;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  
+  .hover\:bg-blue-400:hover {
+    background-color: #2980b9;
+  }
+  
+  .transition {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Gradient styles */
+  
+  .z-20 {
+    z-index: 20;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .bottom-3 {
+    bottom: 0.75rem;
+  }
+  
+  .w-full {
+    width: 100%;
+  }

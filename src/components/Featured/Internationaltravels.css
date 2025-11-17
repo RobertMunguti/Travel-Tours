@@ -1,0 +1,50 @@
+
+figure {
+    position: relative; /* ensure the overlay is positioned correctly */
+  }
+  
+  figure img {
+    width: 80%; /* make the image smaller by default */
+    transition: opacity 0.3s; /* add a smooth transition */
+  }
+  
+  figure:hover img {
+    opacity: 0.7; /* darken the image */
+  }
+  
+  figure button {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s; /* add a smooth transition for the button */
+  }
+  
+  figure:hover button {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  figure:before {
+    content: ''; /* create a pseudo-element for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1.8); /* dark overlay */
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.3s; /* smooth transition */
+  }
+  
+  figure:hover:before {
+    opacity: 1; /* show the overlay on hover */
+  }
+  
+  @keyframes film {
+    0% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* no shadow */
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); /* add a black shadow on top */
+    }
+  }
+  

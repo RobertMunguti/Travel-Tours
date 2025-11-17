@@ -1,0 +1,17 @@
+.emoji-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .emoji {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
